@@ -14,7 +14,11 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@web-components/web-components-native": [
+        "libs/web-components-native/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

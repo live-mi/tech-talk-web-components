@@ -1,4 +1,10 @@
 {
   "version": 2,
-  "projects": {}
+  "projects": {
+    "angular-app": "apps/angular-app",
+    "angular-app-e2e": "apps/angular-app-e2e",
+    "react-app": "apps/react-app",
+    "react-app-e2e": "apps/react-app-e2e",
+    "web-components-native": "libs/web-components-native"
+  }
 }

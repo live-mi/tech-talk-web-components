@@ -1,0 +1,12 @@
+.navigation-list {
+  display: flex;
+  list-style: none;
+
+  .navigation-list-item {
+    &:not(:first-child) {
+      margin-left: 2rem;
+    }
+  }
+}
+
+
