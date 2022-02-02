@@ -5,6 +5,8 @@
     "angular-app-e2e": "apps/angular-app-e2e",
     "react-app": "apps/react-app",
     "react-app-e2e": "apps/react-app-e2e",
-    "web-components-native": "libs/web-components-native"
+    "web-components-native": "libs/web-components-native",
+    "web-components-react": "libs/web-components-react",
+    "web-components-stencil": "libs/web-components-stencil"
   }
 }

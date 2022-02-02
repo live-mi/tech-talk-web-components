@@ -1,0 +1,18 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.radio-group-container {
+  width: 80%;
+  margin: 3rem;
+  border: 2px solid #2e539b;
+  padding: 2rem;
+}
+
+.radio-group-value {
+  border: 2px solid #2e539b;
+  padding: 1rem 2rem;
+}

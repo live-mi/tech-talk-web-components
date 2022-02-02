@@ -17,6 +17,15 @@
     "paths": {
       "@web-components/web-components-native": [
         "libs/web-components-native/src/index.ts"
+      ],
+      "@web-components/web-components-react": [
+        "libs/web-components-react/src/index.ts"
+      ],
+      "@web-components/web-components-stencil": [
+        "dist/libs/web-components-stencil"
+      ],
+      "@web-components/web-components-stencil/loader": [
+        "dist/libs/web-components-stencil/loader"
       ]
     }
   },

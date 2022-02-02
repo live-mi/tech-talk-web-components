@@ -1,0 +1,43 @@
+{
+  "root": "libs/web-components-react",
+  "sourceRoot": "libs/web-components-react/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nrwl/web:rollup",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/web-components-react",
+        "tsConfig": "libs/web-components-react/tsconfig.lib.json",
+        "project": "libs/web-components-react/package.json",
+        "entryFile": "libs/web-components-react/src/index.ts",
+        "external": ["react/jsx-runtime"],
+        "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
+        "compiler": "babel",
+        "assets": [
+          {
+            "glob": "libs/web-components-react/README.md",
+            "input": ".",
+            "output": "."
+          }
+        ]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/web-components-react/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/web-components-react"],
+      "options": {
+        "jestConfig": "libs/web-components-react/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  }
+}

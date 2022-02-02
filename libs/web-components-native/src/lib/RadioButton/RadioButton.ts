@@ -7,6 +7,7 @@ export class RadioButton extends HTMLElement {
     this.setAttribute('role', 'radio');
     this.setAttribute('tabindex', '-1');
     this.setAttribute('aria-checked', 'false');
+    this.setAttribute('value', this.getAttribute('value') || '')
   }
 }
 

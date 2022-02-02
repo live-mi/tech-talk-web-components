@@ -76,12 +76,17 @@ export class RadioGroup extends HTMLElement {
     if (index !== -1) {
       this.selected = index;
     }
+    const customEvent = new CustomEvent('onChange',
+      { detail: {
+        index,
+          value: this.radioButtons[index].getAttribute('value') }
+      });
+    this.dispatchEvent(customEvent);
   }
 
   set selected(index: number) {
     if (isFinite(this.selected)) {
-      // Set the old button to tabindex -1
-      let previousSelected = this.radioButtons[this.selected];
+      const previousSelected = this.radioButtons[this.selected];
       previousSelected.tabIndex = -1;
       previousSelected.removeAttribute('aria-checked');
     }
